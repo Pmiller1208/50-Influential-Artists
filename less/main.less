@@ -9,6 +9,7 @@
         width: 100%;
         display: flex;
         flex-wrap: wrap;
+        margin-top: 8%;
     }
 
     .artist{
@@ -16,11 +17,22 @@
         display: flex;
         flex-direction: column;
 
+        @media @mobile{
+            width: 100%;
+            margin: 4% auto;
+            padding: 6% 0;
+        }
+
         img{
-            width: 40%x;
-            height: 30%;
+            width: 50%;
+            height: 50%;
             margin: 0 auto;
             border-radius: 15px;
+
+            @media @mobile{
+                width: 90%;
+                height: 200px;
+            }
         }
 
         a{

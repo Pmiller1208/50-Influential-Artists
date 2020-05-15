@@ -1,7 +1,6 @@
 .title-container{
     background-image: url(https://github.com/Pmiller1208/50-Influential-Artists/blob/patrick-miller/assets/home.png?raw=true);
-    height: 60vh;
-    width: 90%;
+    .size(90%, 60vh);
     margin: 0 auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,8 +8,7 @@
     position: relative;
 
     @media @mobile{
-        height: 40vh;
-        width: 100%;
+        .size(100%, 40vh);
         margin: 0 auto;
         background-position: center;
         background-repeat: no-repeat;
@@ -26,22 +24,22 @@
         transform: translate(-50%, -50%);
         color: white;
 
+        @media @mobile{
+            width: 80%;
+        }
+
         h1 {
             .font(@headFont, 5.6rem);
             font-weight: bold;
             padding: 5% 0;
+
+            @media @mobile{
+                font-size: 4.2rem;
+            }
         }
 
         button {
-            border: none;
-            outline: 0;
-            display: inline-block;
-            padding: 10px 25px;
-            color: black;
-            background-color: #ddd;
-            text-align: center;
-            cursor: pointer;
-            font-size: 1.8rem;
+            .button();
         }
     }
 }
